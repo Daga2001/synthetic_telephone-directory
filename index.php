@@ -1,3 +1,8 @@
+<!--
+    Author: David Alberto Guzmán
+    Course: DESARROLLO WEB CON PHP (3151356) 
+    Evidence: Taller “Uso de arreglos”
+-->
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -133,7 +138,7 @@
                     $directorioTelefonico = [];
                     for ($i = 1; $i <= $numeroDeRegistros; $i++) {
                         // Elegimos un color aleatorio del array de colores posibles
-                        // hay una probabilidad del 25% de que haya no haya un color.
+                        // hay una probabilidad del 25% de que haya no haya un color favorito.
                         $numeroAleatorio = rand(1,100);
                         if($numeroAleatorio >= 1 && $numeroAleatorio <= 25)
                         {
@@ -171,6 +176,7 @@
                     /**
                      * Acá va el bucle foreach que recorre los datos del arreglo
                      * directorioTelefonico y los agrega a la tabla
+                     * el contador servirá para mostrar el identificador del usuario.
                      */
                     $counter = 1;
                     foreach ($directorioTelefonico as $datosUsuario) {
